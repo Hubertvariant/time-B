@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>América-MG - Série B 2025</title>
+  <style>
+    body {
+      background-color: #006400;
+      color: #FFFFFF;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 30px;
+    }
+    img {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>América Futebol Clube</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/pt/8/88/Am%C3%A9rica_Mineiro.png" alt="Escudo América-MG">
+  <p><strong>Cidade:</strong> Belo Horizonte - MG</p>
+  <p><strong>Estádio:</strong> Independência</p>
+  <p><strong>Cores:</strong> Verde e Branco</p>
+</body>
+</html>
