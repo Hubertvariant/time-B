@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botafogo-SP - Série B 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #000000, #330000);
+      font-family: 'Roboto Mono', monospace;
+      color: #FF0000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.6em;
+      margin: 0;
+      color: #FF3333;
+      text-shadow: 2px 2px #000;
+    }
+
+    .logo {
+      margin: 20px 0;
+      filter: drop-shadow(2px 2px 6px #000);
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.06);
+      padding: 25px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    strong {
+      color: #FF6666;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      font-size: 0.85em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Botafogo Futebol Clube (SP)</h1>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/pt/0/01/Botafogo-SP.png" alt="Escudo Botafogo-SP" width="150" />
+  </header>
+
+  <section>
+    <p><strong>Cidade:</strong> Ribeirão Preto - SP</p>
+    <p><strong>Estádio:</strong> Santa Cruz</p>
+    <p><strong>Fundação:</strong> 1918</p>
+    <p><strong>Cores:</strong> Vermelho, Preto e Branco</p>
+    <p><strong>Apelido:</strong> Pantera</p>
+    <p><strong>Destaque:</strong> Clube tradicional do interior paulista com torcida apaixonada e presença firme nas competições nacionais</p>
+  </section>
+
+  <footer>
+    Série B 2025 • Página oficial criada por Hubert
+  </footer>
+</body>
+</html>
