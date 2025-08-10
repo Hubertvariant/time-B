@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #000000, #333333);
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
       font-family: 'Share Tech Mono', monospace;
       color: #FFFFFF;
       display: flex;
@@ -21,28 +21,33 @@
 
     header {
       padding: 30px 20px;
+      animation: fadeIn 1.2s ease-in-out;
     }
 
     h1 {
       font-family: 'Anton', sans-serif;
-      font-size: 2.6em;
+      font-size: 2.8em;
       margin: 0;
-      text-shadow: 2px 2px #555;
+      text-shadow: 2px 2px 6px rgba(255,255,255,0.2);
+      letter-spacing: 1px;
     }
 
     .logo {
       margin: 20px 0;
-      filter: drop-shadow(2px 2px 6px #000);
+      filter: drop-shadow(0px 0px 10px #fff);
+      animation: pulse 2.5s infinite;
     }
 
     section {
-      background-color: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.07);
       padding: 25px;
       border-radius: 15px;
       width: 90%;
       max-width: 600px;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
       margin-bottom: 20px;
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(4px);
     }
 
     p {
@@ -51,7 +56,8 @@
     }
 
     strong {
-      color: #F2F2F2;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
     }
 
     footer {
@@ -60,12 +66,22 @@
       font-size: 0.85em;
       color: #AAA;
     }
+
+    @keyframes pulse {
+      0%, 100% { filter: drop-shadow(0px 0px 10px #fff); }
+      50% { filter: drop-shadow(0px 0px 20px #ccc); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Operário Ferroviário Esporte Clube</h1>
-    <img class="logo" src="https://upload.wikimedia.org/wikipedia/pt/2/29/Oper%C3%A1rio_Ferrovi%C3%A1rio_Esporte_Clube.png" alt="Escudo Operário-PR" width="150" />
+    <img class="logo" src="../imagem/opera.png" alt="Escudo Operário-PR" width="150" />
   </header>
 
   <section>
@@ -74,7 +90,7 @@
     <p><strong>Fundação:</strong> 1912</p>
     <p><strong>Cores:</strong> Preto e Branco</p>
     <p><strong>Apelido:</strong> Fantasma</p>
-    <p><strong>Destaque:</strong> Clube centenário com forte presença no futebol paranaense e campanhas marcantes na Série B</p>
+    <p><strong>Destaque:</strong> Clube centenário com forte presença no futebol paranaense e campanhas marcantes na Série B.</p>
   </section>
 
   <footer>
