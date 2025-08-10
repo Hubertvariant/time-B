@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(120deg, #000000, #222222);
+      background: linear-gradient(135deg, #000000, #1f1f1f, #2a2a2a);
       font-family: 'Roboto', sans-serif;
       color: #fff;
       display: flex;
@@ -19,43 +19,56 @@
     }
 
     header {
-      padding: 40px 20px;
+      padding: 40px 20px 20px;
       text-align: center;
+      animation: fadeIn 1.2s ease-out;
     }
 
     h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 2.5em;
       color: #f2f2f2;
-      text-shadow: 2px 2px 4px #000;
+      text-shadow: 2px 2px 8px rgba(255,255,255,0.3);
       margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1.1em;
     }
 
     main {
       width: 100%;
-      max-width: 600px;
+      max-width: 800px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
+      gap: 14px;
       padding: 20px;
+      animation: fadeInUp 1.5s ease-out;
     }
 
     a {
-      background-color: rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.08);
       padding: 14px 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       color: #fff;
       text-decoration: none;
       font-size: 1em;
-      transition: background 0.3s;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-      min-width: 120px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      min-width: 140px;
       text-align: center;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
     }
 
     a:hover {
-      background-color: #444;
+      background: linear-gradient(135deg, #ffcc00, #ff9900);
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(255,165,0,0.6);
     }
 
     footer {
@@ -65,35 +78,44 @@
       color: #999;
       text-align: center;
     }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Série B 2025</h1>
-    <p>Selecione seu clube</p>
+    <p>Selecione seu clube favorito</p>
   </header>
 
   <main>
-    <a href="coritiba.html">Coritiba</a>
-    <a href="goias.html">Goiás</a>
-    <a href="novorizontino.html">Novorizontino</a>
+    <a href="america-mg.html">América-MG</a>
+    <a href="amazonasfc.html">Amazonas FC</a>
+    <a href="atletico-go.html">Atlético-GO</a>
+    <a href="athleticlub.html">Athletic Club-MG</a>
+    <a href="avai.html">Avaí</a>
+    <a href="bota-sp.html">Botafogo-SP</a>
     <a href="chapecoense.html">Chapecoense</a>
     <a href="clubedoremo.html">Clube do Remo</a>
+    <a href="coritiba.html">Coritiba</a>
+    <a href="crb.html">CRB</a>
     <a href="criciuma.html">Criciúma</a>
     <a href="cuiaba.html">Cuiabá</a>
-    <a href="avai.html">Avaí</a>
-    <a href="vilanova.html">Vila Nova</a>
-    <a href="crb.html">CRB</a>
-    <a href="athletico-pr.html">Athletico-PR</a>
-    <a href="athleticlub.html">Athletic Club</a>
-    <a href="operario.html">Operário</a>
-    <a href="atletico-go.html">Atlético-GO</a>
-    <a href="america-mg.html">América-MG</a>
-    <a href="voltaredonda.html">Volta Redonda</a>
+    <a href="goias.html">Goiás</a>
+    <a href="novorizontino.html">Novorizontino</a>
+    <a href="operarioferroviario.html">Operário-PR</a>
     <a href="paysandu.html">Paysandu</a>
-    <a href="operarioferroviario.html">Operário Ferroviário</a>
-    <a href="amazonasfc.html">Amazonas FC</a>
-    <a href="fogo.html">Botafogo-SP</a>
+    <a href="voltaredonda.html">Volta Redonda</a>
+    <a href="vilanova.html">Vila Nova</a>
   </main>
 
   <footer>
